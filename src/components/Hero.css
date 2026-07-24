@@ -1,0 +1,84 @@
+/* ============================================================
+   OCTETNMS HERO — scoped tokens.
+   Everything here lives under .hero-octet, so the rest of the
+   site keeps its existing purple palette untouched.
+   Hex values sampled directly from the reference screenshot.
+   ============================================================ */
+
+.hero-octet {
+  --hero-bg:       #01040E;  /* page background            */
+  --hero-mint:     #52CBA8;  /* "clarity." / "confidence."  */
+  --hero-btn-from: #62DBAE;  /* primary button, left edge   */
+  --hero-btn-to:   #3CA7A6;  /* primary button, right edge  */
+  --hero-sub:      #DCDDE5;  /* subheadline                 */
+  --hero-trust:    #C3C7CF;  /* trust line                  */
+  --hero-badge:    #646971;  /* certification badges        */
+
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--hero-bg);
+  font-family: 'Poppins', system-ui, sans-serif;
+}
+
+/* tsParticles paints into this. Sits behind everything. */
+.hero-octet .hero-mesh {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+/* Radial veil — darkens the centre so the headline reads clean
+   and the mesh survives only at the left/right edges. */
+.hero-octet .hero-veil {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: radial-gradient(
+    120% 90% at 50% 45%,
+    transparent 40%,
+    rgb(1 4 14 / 0.55) 82%,
+    rgb(1 4 14 / 0.85) 100%
+  );
+}
+
+/* Primary button: left-to-right mint sweep + its own glow. */
+.hero-octet .hero-cta {
+  background: linear-gradient(90deg, var(--hero-btn-from), var(--hero-btn-to));
+  box-shadow: 0 0 44px -6px rgb(98 219 174 / 0.45);
+}
+.hero-octet .hero-cta:hover {
+  box-shadow: 0 0 60px -4px rgb(98 219 174 / 0.6);
+}
+
+/* Video frame: rounded, thin edge, soft cyan bloom underneath. */
+.hero-octet .hero-video-frame {
+  position: relative;
+  border-radius: 18px;
+  padding: 1px;
+  background: linear-gradient(160deg, rgb(82 203 168 / 0.35), rgb(91 141 255 / 0.15) 55%, transparent);
+  box-shadow: 0 30px 80px -30px rgb(4 20 40 / 0.9), 0 0 60px -20px rgb(82 203 168 / 0.25);
+}
+.hero-octet .hero-video {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 17px;
+  background: #000512;
+}
+
+/* Soft bloom behind the product mark. */
+.hero-octet .hero-lockup-glow::before {
+  content: '';
+  position: absolute;
+  inset: -18px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgb(82 203 168 / 0.3), transparent 68%);
+  filter: blur(14px);
+  z-index: -1;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-octet .hero-mesh { display: none; }
+}
