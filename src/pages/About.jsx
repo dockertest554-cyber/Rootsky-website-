@@ -17,7 +17,7 @@ export default function About() {
         crumb="About Us"
         eyebrow="Who we are"
         title="We make complex systems make sense."
-        intro="Rootsky Systems is an IT solutions company helping technology teams see, secure, and scale the infrastructure they depend on."
+        intro="RootSky System is an IT solutions company helping technology teams see, secure, and scale the infrastructure they depend on."
       />
 
       <section className="section">
@@ -50,23 +50,9 @@ export default function About() {
           </div>
           <div className="grid grid-2">
             {values.map((v) => (
-              <div className="value reveal" key={v.n}>
-                <div className="num">{v.n}</div>
+              <div className="value reveal" key={v.t}>
                 <h3>{v.t}</h3>
                 <p>{v.d}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="section ink">
-        <div className="wrap">
-          <div className="grid grid-4" style={{ textAlign: 'center' }}>
-            {[['2018', 'Founded'], ['80+', 'Specialists'], ['500+', 'Networks mapped'], ['12', 'Countries served']].map(([n, l]) => (
-              <div className="reveal" key={l}>
-                <div style={{ fontFamily: 'var(--font-display)', fontSize: '2.6rem', fontWeight: 600 }}>{n}</div>
-                <div style={{ color: '#93A2B8', fontSize: '0.9rem' }}>{l}</div>
               </div>
             ))}
           </div>

@@ -26,7 +26,7 @@ export default function Navbar() {
           <Link to="/" onClick={close} className="flex shrink-0 items-center gap-3">
             <img src="/rootsky-mark.png" alt="" aria-hidden="true" className="h-8 w-auto" />
             <span className="text-[1.05rem] font-bold tracking-tight text-white">
-              ROOTSKY<span className="text-[#5B6DFF]">SYSTEMS</span>
+              ROOTSKY<span className="text-[#5B6DFF]">SYSTEM</span>
             </span>
           </Link>
 

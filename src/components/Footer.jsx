@@ -34,7 +34,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4>OCTETNMS</h4>
+            <h4>OCTET</h4>
             <ul>
               <li><Link to="/products">Network Monitoring</Link></li>
               <li><Link to="/products">Infrastructure Health</Link></li>
@@ -56,7 +56,7 @@ export default function Footer() {
         <div className="footer-wordmark">ROOTSKY SYSTEMS</div>
 
         <div className="footer-base">
-          <span>© {year} Rootsky Systems. All rights reserved.</span>
+          <span>© {year} RootSky System. All rights reserved.</span>
           <span>Privacy · Terms · Security</span>
         </div>
       </div>

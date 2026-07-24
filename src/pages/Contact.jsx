@@ -84,12 +84,12 @@ export default function Contact() {
               </div>
               <div className="info-row">
                 <div className="ic"><Icon.pin /></div>
-                <div><h4>Office</h4><p>Gaur Saundaryam, Noida Ext.<br />Uttar Pradesh</p></div>
+                <div><h4>Office</h4><p>Greater Noida West</p></div>
               </div>
             </div>
             <div className="info-card" style={{ marginTop: 22 }}>
               <h4 style={{ marginBottom: 8 }}>Support hours</h4>
-              <p style={{ color: 'var(--steel)' }}>Managed clients get 24/7 monitoring and response. General enquiries are answered Mon–Fri, 9am–6pm.</p>
+              <p style={{ color: 'var(--steel)' }}>Managed clients get 24/7 monitoring and response. General enquiries are answered Mon–Fri, 9 AM – 6 PM.</p>
             </div>
           </div>
         </div>

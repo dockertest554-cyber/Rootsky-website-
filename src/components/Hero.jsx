@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import { motion } from 'motion/react'
 import { Particles, ParticlesProvider } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
-import { ArrowRight, ShieldCheck, CircleCheckBig, BadgeCheck, Lock } from 'lucide-react'
+import { ArrowRight, ShieldCheck, CircleCheckBig, Server, Lock } from 'lucide-react'
 import './hero.css'
 
 /* Defined once, outside the component — ParticlesProvider throws if the
    init callback identity changes between renders. */
 const initEngine = async (engine) => { await loadSlim(engine) }
 
-const badges = [ShieldCheck, CircleCheckBig, BadgeCheck, Lock]
+const badges = [ShieldCheck, CircleCheckBig, Server, Lock]
 
 /* Stagger: each child inherits `rise` and fires 0.09s after the last. */
 const stagger = { hidden: {}, show: { transition: { staggerChildren: 0.09, delayChildren: 0.1 } } }
@@ -62,7 +62,7 @@ export default function Hero() {
             loop
             playsInline
             preload="auto"
-            aria-label="OctetNMS product demo"
+            aria-label="OCTET product demo"
           />
         </motion.div>
 
@@ -74,7 +74,7 @@ export default function Hero() {
               <img src="/octet-mark.png" alt="" aria-hidden="true" className="h-14 w-14" />
             </span>
             <span className="text-5xl font-bold tracking-tight text-white lg:text-6xl">
-              OCTET<span style={{ color: 'var(--hero-mint)' }}>NMS</span>
+              OCTET
             </span>
           </motion.div>
 
@@ -94,7 +94,7 @@ export default function Hero() {
             className="mt-6 max-w-xl text-pretty text-base leading-relaxed sm:text-lg"
             style={{ color: 'var(--hero-sub)' }}
           >
-            OctetNMS gives you real-time visibility, intelligent insights,
+            OCTET gives you real-time visibility, intelligent insights,
             and instant control over your entire network.
           </motion.p>
 

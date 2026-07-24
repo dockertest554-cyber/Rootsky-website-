@@ -55,8 +55,7 @@ export default function Services() {
               { n: '03', t: 'Deliver', d: 'We implement with minimal disruption and full documentation.' },
               { n: '04', t: 'Operate', d: 'We monitor and manage so it keeps running and improving.' },
             ].map((v) => (
-              <div className="value reveal" key={v.n}>
-                <div className="num">{v.n}</div>
+              <div className="value reveal" key={v.t}>
                 <h3>{v.t}</h3>
                 <p>{v.d}</p>
               </div>

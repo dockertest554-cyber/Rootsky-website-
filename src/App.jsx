@@ -13,13 +13,13 @@ const Contact = lazy(() => import('./pages/Contact.jsx'))
 const Careers = lazy(() => import('./pages/Careers.jsx'))
 const NotFound = lazy(() => import('./pages/NotFound.jsx'))
 
-const SITE = 'Rootsky Systems'
+const SITE = 'RootSky System'
 const META = {
-  '/':         { t: `${SITE} | IT & Connectivity Solutions`, d: 'Rootsky Systems turns tangled IT environments into living connectivity maps you can see, secure, and scale.' },
+  '/':         { t: `${SITE} | IT & Connectivity Solutions`, d: 'RootSky System turns tangled IT environments into living connectivity maps you can see, secure, and scale.' },
   '/about':    { t: `About Us | ${SITE}`, d: 'We help IT teams see, secure, and scale the infrastructure they depend on.' },
-  '/products': { t: `OctetNMS | ${SITE}`, d: 'OctetNMS: the connectivity-mapping platform that maps your whole network in real time.' },
+  '/products': { t: `OCTET | ${SITE}`, d: 'OCTET: the connectivity-mapping platform that maps your whole network in real time.' },
   '/services': { t: `Services | ${SITE}`, d: 'IT infrastructure services — network management, monitoring deployment, and connectivity consulting.' },
-  '/careers':  { t: `Careers | ${SITE}`, d: 'Join Rootsky Systems and help make complex infrastructure make sense.' },
+  '/careers':  { t: `Careers | ${SITE}`, d: 'Join RootSky System and help make complex infrastructure make sense.' },
   '/contact':  { t: `Contact Us | ${SITE}`, d: 'Tell us about your environment. We will point you to the right next step.' },
 }
 

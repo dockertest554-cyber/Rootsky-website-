@@ -44,7 +44,7 @@ const industries = [
 
 const testimonials = [
   {
-    quote: 'OctetNMS catches outages before customers notice. Our uptime has never been better.',
+    quote: 'OCTET catches outages before customers notice. Our uptime has never been better.',
     name: 'Rajesh Mehta', role: 'VP of Operations', company: 'NetServ Global',
   },
   {
@@ -58,8 +58,8 @@ const testimonials = [
 ]
 
 const faqs = [
-  { q: 'What can OctetNMS monitor?',        a: 'Network devices, routers, switches, firewalls, servers, applications, bandwidth, performance, logs, availability, and full topology — across multiple vendors.' },
-  { q: 'Cloud or on-premise?',              a: 'Both. OctetNMS supports cloud, on-premise, and hybrid deployments to fit your infrastructure and compliance needs.' },
+  { q: 'What can OCTET monitor?',        a: 'Network devices, routers, switches, firewalls, servers, applications, bandwidth, performance, logs, availability, and full topology — across multiple vendors.' },
+  { q: 'Cloud or on-premise?',              a: 'Both. OCTET supports cloud, on-premise, and hybrid deployments to fit your infrastructure and compliance needs.' },
   { q: 'How does the AI engine work?',      a: 'It predicts failures, finds root causes, prioritises alerts, detects anomalies, and recommends fixes — reducing noise and speeding resolution.' },
   { q: 'Multi-vendor support?',             a: 'Yes — via SNMP and open APIs across routers, switches, firewalls, wireless controllers, cameras, and telecom devices.' },
   { q: 'How quickly can we be up?',         a: 'Auto-discovery maps your environment fast. Most teams are monitoring within a single deployment cycle.' },
@@ -119,10 +119,10 @@ export default function Home() {
             <div className="hp-ba-copy fade-up">
               <span className="hp-kicker">The shift</span>
               <h2 className="hp-title">
-                Legacy tools react.<br />OctetNMS predicts.
+                Legacy tools react.<br />OCTET predicts.
               </h2>
               <p className="hp-body">
-                Stop fighting fires. OctetNMS learns normal behaviour
+                Stop fighting fires. OCTET learns normal behaviour
                 across your entire network and warns your team before
                 anything breaks — turning firefighting into foresight.
               </p>
@@ -144,7 +144,7 @@ export default function Home() {
               </div>
 
               <div className="h-glass hp-ba-card hp-card-new fade-up">
-                <span className="hp-card-tag hp-tag-new">OCTETNMS</span>
+                <span className="hp-card-tag hp-tag-new">OCTET</span>
                 <h3>Predictive & automated</h3>
                 <ul className="hp-card-list">
                   {['Failures caught before impact', 'AI narrows to root cause in seconds', 'Full multi-vendor coverage', 'Only what matters, nothing else'].map(t => (
@@ -281,7 +281,7 @@ export default function Home() {
             <span className="hp-kicker">Integrations</span>
             <h2 className="hp-title" style={{ maxWidth: '20ch' }}>Works with your entire stack.</h2>
             <p className="hp-body" style={{ marginTop: 14, maxWidth: '54ch' }}>
-              OctetNMS connects to the vendors and platforms you already run — via SNMP, open APIs, and native connectors.
+              OCTET connects to the vendors and platforms you already run — via SNMP, open APIs, and native connectors.
             </p>
           </div>
           <div className="hp-integ-grid fade-up">
@@ -352,7 +352,7 @@ export default function Home() {
             <span className="hp-kicker hp-kicker-light" style={{ justifyContent: 'center', display: 'inline-flex' }}>Get started</span>
             <h2 className="hp-cta-title">Give your network intelligence.</h2>
             <p className="hp-cta-sub">
-              See OctetNMS map, monitor, and predict across your entire infrastructure — live, on your network.
+              See OCTET map, monitor, and predict across your entire infrastructure — live, on your network.
             </p>
             <div className="hp-cta-actions">
               <Magnetic>

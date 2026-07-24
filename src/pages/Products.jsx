@@ -3,7 +3,7 @@ import { Icon, useReveal, NetworkCanvas } from '../components/ui.jsx'
 import { DashboardMock, GlobeNetwork, FlowDiagram } from '../components/graphics.jsx'
 
 const features = [
-  { icon: 'map', t: 'Auto-discovery', d: 'Point OctetNMS at your environment and it finds every device, service, and link on its own.' },
+  { icon: 'map', t: 'Auto-discovery', d: 'Point OCTET at your environment and it finds every device, service, and link on its own.' },
   { icon: 'network', t: 'Dependency tracing', d: 'See exactly what depends on what - across on-prem, cloud, and hybrid.' },
   { icon: 'pulse', t: 'Live health & latency', d: 'Real-time status on every node and connection, updated continuously.' },
   { icon: 'shield', t: 'Impact analysis', d: 'Change one thing and instantly see everything it touches before it breaks.' },
@@ -13,7 +13,7 @@ const features = [
 
 const flow = [
   { icon: <Icon.network />, t: 'Connect', d: 'Add your networks, cloud accounts, and devices in minutes.' },
-  { icon: <Icon.map />, t: 'Discover', d: 'OctetNMS scans and draws your full live topology automatically.' },
+  { icon: <Icon.map />, t: 'Discover', d: 'OCTET scans and draws your full live topology automatically.' },
   { icon: <Icon.pulse />, t: 'Monitor', d: 'Watch health, latency, and dependencies on one live canvas.' },
   { icon: <Icon.shield />, t: 'Act', d: 'Catch issues early and plan changes with confidence.' },
 ]
@@ -32,7 +32,7 @@ export default function Products() {
             <div>
               <div className="crumb" style={{ marginBottom: 14 }}>Home <span>/</span> Products</div>
               <div className="octet-lockup" style={{ marginBottom: 20 }}>
-                <img src="/octet-mark.png" alt="OCTETNMS" />
+                <img src="/octet-mark.png" alt="OCTET" />
                 <span className="octet-name">Octet<b>NMS</b></span>
               </div>
               <h1>Your network, <span className="accent">mapped in real time.</span></h1>
@@ -50,9 +50,9 @@ export default function Products() {
       <section className="section">
         <div className="wrap split tight">
           <div className="reveal">
-            <span className="eyebrow">What is OCTETNMS?</span>
+            <span className="eyebrow">What is OCTET?</span>
             <h2 style={{ fontSize: 'clamp(1.9rem,3.6vw,2.7rem)', margin: '16px 0 18px' }}>One live map of everything you run.</h2>
-            <p style={{ color: 'var(--steel)', marginBottom: 16 }}>Most teams only learn how their systems connect when something breaks. OctetNMS draws the full picture continuously - every server, service, link, and dependency on a single canvas that updates in real time.</p>
+            <p style={{ color: 'var(--steel)', marginBottom: 16 }}>Most teams only learn how their systems connect when something breaks. OCTET draws the full picture continuously - every server, service, link, and dependency on a single canvas that updates in real time.</p>
             <ul className="checklist">
               {['No manual diagrams to maintain', 'Works across on-prem, cloud, and hybrid', 'Always current, never out of date'].map((t) => (
                 <li key={t}><span className="tick"><Icon.check /></span>{t}</li>
@@ -116,7 +116,7 @@ export default function Products() {
         <div className="wrap">
           <div className="cta-band reveal">
             <span className="eyebrow on-dark">Ready to see your map?</span>
-            <h2>Let's map your environment with OCTETNMS.</h2>
+            <h2>Let's map your environment with OCTET.</h2>
             <p>Book a demo and we'll show you a live map of your own infrastructure - usually within a day.</p>
             <Link to="/contact" className="btn btn-primary">Request a demo <span className="arrow"><Icon.arrow /></span></Link>
           </div>
