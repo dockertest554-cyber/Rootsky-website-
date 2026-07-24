@@ -15,7 +15,7 @@
 @layer base {
 
   /* ============================================================
-     ROOTSKY SYSTEMS — Design System
+     ROOTSKY SYSTEM — Design System
      Palette : Ink navy + white-dominant + restrained cobalt accent
      Type    : Space Grotesk (display) / Inter (body)
      ============================================================ */
@@ -1913,7 +1913,7 @@
   .hp-hero { min-height: 84svh; }
   .hp-hero-inner { padding: 92px 0 78px; }
 
-  /* ── Before/After cards: premium touch, OctetNMS card wins ── */
+  /* ── Before/After cards: premium touch, OCTET card wins ── */
   .hp .hp-section .hp-ba-card { position: relative; overflow: hidden; transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
   .hp .hp-section .hp-ba-card:hover { transform: translateY(-4px); }
   .hp .hp-section .hp-card-new { border-color: rgba(91,109,255,0.35); box-shadow: 0 30px 70px -34px rgba(91,109,255,0.5); }

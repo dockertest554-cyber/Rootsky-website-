@@ -14,7 +14,7 @@ export function Logo({ light = false }) {
   return (
     <span className="brand">
       <img className="brand-mark-img" src="/rootsky-mark.png" alt="" aria-hidden="true" />
-      <span className="brand-text">ROOTSKY<span> SYSTEMS</span></span>
+      <span className="brand-text">ROOTSKY<span> SYSTEM</span></span>
     </span>
   )
 }

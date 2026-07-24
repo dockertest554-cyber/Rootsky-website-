@@ -33,7 +33,7 @@ export default function Products() {
               <div className="crumb" style={{ marginBottom: 14 }}>Home <span>/</span> Products</div>
               <div className="octet-lockup" style={{ marginBottom: 20 }}>
                 <img src="/octet-mark.png" alt="OCTET" />
-                <span className="octet-name">Octet<b>NMS</b></span>
+                <span className="octet-name">OCTET</span>
               </div>
               <h1>Your network, <span className="accent">mapped in real time.</span></h1>
               <p>The connectivity-mapping platform that turns tangled infrastructure into one live, searchable map you can actually trust.</p>
