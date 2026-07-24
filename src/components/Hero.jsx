@@ -4,7 +4,7 @@ import { motion } from 'motion/react'
 import { Particles, ParticlesProvider } from '@tsparticles/react'
 import { loadSlim } from '@tsparticles/slim'
 import { ArrowRight, ShieldCheck, CircleCheckBig, BadgeCheck, Lock } from 'lucide-react'
-import './Hero.css'
+import './hero.css'
 
 /* Defined once, outside the component — ParticlesProvider throws if the
    init callback identity changes between renders. */
