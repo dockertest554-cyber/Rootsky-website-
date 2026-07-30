@@ -32,7 +32,7 @@ export default function Preloader() {
   return (
     <div className="preloader" ref={root}>
       <div className="pl-brand">
-        ROOTSKY<span> SYSTEMS</span>
+        ROOTSKY<span> SYSTEM</span>
       </div>
       <div className="pl-count"><span ref={countRef}>0</span><i>%</i></div>
       <div className="pl-track"><div className="pl-bar" /></div>
