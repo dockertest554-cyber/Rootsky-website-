@@ -58,8 +58,8 @@ const testimonials = [
 ]
 
 const faqs = [
-  { q: 'What can OCTET monitor?',        a: 'Network devices, routers, switches, firewalls, servers, applications, bandwidth, performance, logs, availability, and full topology — across multiple vendors.' },
-  { q: 'Cloud or on-premise?',              a: 'Both. OCTET supports cloud, on-premise, and hybrid deployments to fit your infrastructure and compliance needs.' },
+  { q: 'What can OCTENIX monitor?',        a: 'Network devices, routers, switches, firewalls, servers, applications, bandwidth, performance, logs, availability, and full topology — across multiple vendors.' },
+  { q: 'Cloud or on-premise?',              a: 'Both. OCTENIX supports cloud, on-premise, and hybrid deployments to fit your infrastructure and compliance needs.' },
   { q: 'How does the AI engine work?',      a: 'It predicts failures, finds root causes, prioritises alerts, detects anomalies, and recommends fixes — reducing noise and speeding resolution.' },
   { q: 'Multi-vendor support?',             a: 'Yes — via SNMP and open APIs across routers, switches, firewalls, wireless controllers, cameras, and telecom devices.' },
   { q: 'How quickly can we be up?',         a: 'Auto-discovery maps your environment fast. Most teams are monitoring within a single deployment cycle.' },
@@ -119,10 +119,10 @@ export default function Home() {
             <div className="hp-ba-copy fade-up">
               <span className="hp-kicker">The shift</span>
               <h2 className="hp-title">
-                Legacy tools react.<br />OCTET predicts.
+                Legacy tools react.<br />OCTENIX predicts.
               </h2>
               <p className="hp-body">
-                Stop fighting fires. OCTET learns normal behaviour
+                Stop fighting fires. OCTENIX learns normal behaviour
                 across your entire network and warns your team before
                 anything breaks — turning firefighting into foresight.
               </p>
@@ -352,7 +352,7 @@ export default function Home() {
             <span className="hp-kicker hp-kicker-light" style={{ justifyContent: 'center', display: 'inline-flex' }}>Get started</span>
             <h2 className="hp-cta-title">Give your network intelligence.</h2>
             <p className="hp-cta-sub">
-              See OCTET map, monitor, and predict across your entire infrastructure — live, on your network.
+              See OCTENIX map, monitor, and predict across your entire infrastructure — live, on your network.
             </p>
             <div className="hp-cta-actions">
               <Magnetic>

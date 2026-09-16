@@ -53,12 +53,12 @@
 }
 
 /* Video frame: rounded, thin edge, soft cyan bloom underneath. */
-.hero-octet .hero-video-frame {
+.hero-octet .hero-video-frame {       
   position: relative;
   border-radius: 18px;
   padding: 1px;
   background: linear-gradient(160deg, rgb(82 203 168 / 0.35), rgb(91 141 255 / 0.15) 55%, transparent);
-  box-shadow: 0 30px 80px -30px rgb(4 20 40 / 0.9), 0 0 60px -20px rgb(82 203 168 / 0.25);
+  box-shadow: 0 30px 80px -30px rgb(4 20 40 / 0.9), 0 0 60px -0ff20px rgb(82 203 168 / 0.25);
 }
 .hero-octet .hero-video {
   display: block;

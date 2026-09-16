@@ -74,7 +74,7 @@ export default function Hero() {
               <img src="/octet-mark.png" alt="" aria-hidden="true" className="h-14 w-14" />
             </span>
             <span className="text-5xl font-bold tracking-tight text-white lg:text-6xl">
-              OCTET
+              OCTENIX
             </span>
           </motion.div>
 
@@ -94,7 +94,7 @@ export default function Hero() {
             className="mt-6 max-w-xl text-pretty text-base leading-relaxed sm:text-lg"
             style={{ color: 'var(--hero-sub)' }}
           >
-            OCTET gives you real-time visibility, intelligent insights,
+            OCTENIX gives you real-time visibility, intelligent insights,
             and instant control over your entire network.
           </motion.p>
 
