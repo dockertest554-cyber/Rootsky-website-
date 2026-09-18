@@ -56,7 +56,7 @@ export default function Hero() {
         <motion.div variants={rise} className="hero-video-frame">
           <video
             className="hero-video"
-            src="/octet-demo.mp4"
+            src="/octenix-demo.mp4"
             autoPlay
             muted
             loop
@@ -71,7 +71,7 @@ export default function Hero() {
           {/* Lockup */}
           <motion.div variants={rise} className="mb-7 flex items-center gap-4">
             <span className="hero-lockup-glow relative">
-              <img src="/octet-mark.png" alt="" aria-hidden="true" className="h-14 w-14" />
+              <img src="/octenix-mark.png" alt="" aria-hidden="true" className="h-14 w-14" />
             </span>
             <span className="text-5xl font-bold tracking-tight text-white lg:text-6xl">
               OCTENIX
