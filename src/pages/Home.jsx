@@ -167,7 +167,7 @@ export default function Home() {
             One console for your whole network.
           </h2>
           <FloatingShowcase>
-            <video src="/octet-demo.mp4" autoPlay muted loop playsInline preload="metadata" />
+            <video src="/octenix-demo.mp4" autoPlay muted loop playsInline preload="metadata" />
           </FloatingShowcase>
         </div>
       </section>
