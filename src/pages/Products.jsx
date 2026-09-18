@@ -32,7 +32,7 @@ export default function Products() {
             <div>
               <div className="crumb" style={{ marginBottom: 14 }}>Home <span>/</span> Products</div>
               <div className="octenix-lockup" style={{ marginBottom: 20 }}>
-                <img src="/octenix-full.png" alt="OCTENIX" style={{ height: 64, width: 'auto' }} />
+                <img src="/octenix-full.png" alt="OCTENIX" style={{ height: 96, width: 'auto', maxWidth: '100%' }} />
               </div>
               <h1>Your network, <span className="accent">mapped in real time.</span></h1>
               <p>The connectivity-mapping platform that turns tangled infrastructure into one live, searchable map you can actually trust.</p>
