@@ -28,7 +28,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4>OCTET</h4>
+            <h4>Octenix</h4>
             <ul>
               <li><Link to="/products">Network Monitoring</Link></li>
               <li><Link to="/products">Infrastructure Health</Link></li>

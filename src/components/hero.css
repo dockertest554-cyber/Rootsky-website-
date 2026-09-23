@@ -1,84 +1,74 @@
 /* ============================================================
-   OCTENIX HERO — scoped tokens.
-   Everything here lives under .hero-octet, so the rest of the
-   site keeps its existing purple palette untouched.
-   Hex values sampled directly from the reference screenshot.
+   OCTENIX HERO — light enterprise theme.
+   Scoped under .hero-octenix so it can't leak into other pages.
    ============================================================ */
 
-.hero-octet {
-  --hero-bg:       #01040E;  /* page background            */
-  --hero-mint:     #52CBA8;  /* "clarity." / "confidence."  */
-  --hero-btn-from: #62DBAE;  /* primary button, left edge   */
-  --hero-btn-to:   #3CA7A6;  /* primary button, right edge  */
-  --hero-sub:      #DCDDE5;  /* subheadline                 */
-  --hero-trust:    #C3C7CF;  /* trust line                  */
-  --hero-badge:    #646971;  /* certification badges        */
+.hero-octenix {
+  --h-bg-1:      #EAF2FB;
+  --h-bg-2:      #DCEAF8;
+  --h-navy:      #142450;
+  --h-blue:      #1F7FFD;
+  --h-blue-2:    #2E9BFF;
+  --h-sub:       #4A5B78;
+  --h-trust:     #6B7A93;
+  --h-btn-from:  #34D399;
+  --h-btn-to:    #22C3C9;
 
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background: var(--hero-bg);
+  background:
+    radial-gradient(120% 80% at 85% 0%, #F2F8FF 0%, transparent 55%),
+    linear-gradient(160deg, var(--h-bg-1), var(--h-bg-2));
   font-family: 'Poppins', system-ui, sans-serif;
 }
 
-/* tsParticles paints into this. Sits behind everything. */
-.hero-octet .hero-mesh {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
+.hero-octenix .h-mesh {
+  position: absolute; inset: 0; z-index: 0; opacity: 0.5; pointer-events: none;
 }
+.hero-octenix .h-inner { position: relative; z-index: 2; }
 
-/* Radial veil — darkens the centre so the headline reads clean
-   and the mesh survives only at the left/right edges. */
-.hero-octet .hero-veil {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-  background: radial-gradient(
-    120% 90% at 50% 45%,
-    transparent 40%,
-    rgb(1 4 14 / 0.55) 82%,
-    rgb(1 4 14 / 0.85) 100%
-  );
-}
-
-/* Primary button: left-to-right mint sweep + its own glow. */
-.hero-octet .hero-cta {
-  background: linear-gradient(90deg, var(--hero-btn-from), var(--hero-btn-to));
-  box-shadow: 0 0 44px -6px rgb(98 219 174 / 0.45);
-}
-.hero-octet .hero-cta:hover {
-  box-shadow: 0 0 60px -4px rgb(98 219 174 / 0.6);
-}
-
-/* Video frame: rounded, thin edge, soft cyan bloom underneath. */
-.hero-octet .hero-video-frame {       
+.hero-octenix .h-video-frame {
   position: relative;
   border-radius: 18px;
-  padding: 1px;
-  background: linear-gradient(160deg, rgb(82 203 168 / 0.35), rgb(91 141 255 / 0.15) 55%, transparent);
-  box-shadow: 0 30px 80px -30px rgb(4 20 40 / 0.9), 0 0 60px -20px rgb(82 203 168 / 0.25);
+  box-shadow: 0 30px 70px -34px rgba(31,90,170,0.5), 0 6px 20px -12px rgba(31,90,170,0.25);
 }
-.hero-octet .hero-video {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 17px;
-  background: #000512;
+.hero-octenix .h-video {
+  display: block; width: 100%; height: auto; border-radius: 18px; background: #dbe8f6;
 }
 
-/* Soft bloom behind the product mark. */
-.hero-octet .hero-lockup-glow::before {
-  content: '';
+.hero-octenix .h-logo { height: 88px; width: auto; max-width: 100%; }
+
+.hero-octenix .h-title {
+  color: var(--h-navy); font-weight: 700; letter-spacing: -0.02em; line-height: 1.06;
+}
+.hero-octenix .h-title .accent {
+  background: linear-gradient(92deg, var(--h-blue), var(--h-blue-2));
+  -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+.hero-octenix .h-sub { color: var(--h-sub); }
+.hero-octenix .h-trust { color: var(--h-trust); }
+
+.hero-octenix .h-cta {
+  background: linear-gradient(92deg, var(--h-btn-from), var(--h-btn-to));
+  color: #06342A;
+  box-shadow: 0 14px 34px -10px rgba(34,195,178,0.55);
+}
+.hero-octenix .h-cta:hover { box-shadow: 0 18px 44px -8px rgba(34,195,178,0.7); }
+
+.hero-octenix .h-cta-2 {
+  color: var(--h-blue); border: 1.5px solid rgba(31,127,253,0.4);
+}
+.hero-octenix .h-cta-2:hover { border-color: var(--h-blue); background: rgba(31,127,253,0.06); }
+
+/* bottom blend into the following light section (#F6F7FB) */
+.hero-octenix .h-blend {
   position: absolute;
-  inset: -18px;
-  border-radius: 9999px;
-  background: radial-gradient(circle, rgb(82 203 168 / 0.3), transparent 68%);
-  filter: blur(14px);
-  z-index: -1;
+  left: 0; right: 0; bottom: 0;
+  height: 140px;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(246,247,251,0) 0%, #F6F7FB 100%);
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .hero-octet .hero-mesh { display: none; }
-}
+@media (prefers-reduced-motion: reduce) { .hero-octenix .h-mesh { display: none; } }
