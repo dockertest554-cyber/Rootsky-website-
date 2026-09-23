@@ -1948,3 +1948,72 @@
   .ahero { padding-top: 140px; }
 
 }
+/* ============================================================
+   LIGHT ENTERPRISE THEME OVERRIDE  (OCTENIX redesign)
+   Appended last so it wins the cascade. Converts the dark
+   surfaces of the original design to the light reference look
+   without touching the layout rules above.
+   ============================================================ */
+:root {
+  --ink:    #142450;   /* was near-black; now deep navy for text */
+  --slate:  #1E3060;
+  --steel:  #4A5B78;
+  --line:   #D8E4F2;
+  --mist:   #F1F6FC;
+  --accent: #1F7FFD;   /* OCTENIX blue */
+  --accent-700: #145FCB;
+  --teal:   #22C3C9;
+}
+
+/* page background: light, subtle blue */
+body { background: #EEF4FB; color: var(--ink); }
+
+/* dark sections -> light cards */
+.section.ink { background: #F1F6FC; color: var(--ink); }
+.section.ink h1, .section.ink h2, .section.ink h3 { color: var(--ink); }
+.section.ink .section-head p { color: var(--steel); }
+.section.ink .eyebrow.on-dark { color: var(--accent); }
+
+/* inner page hero (About/Services/Careers/Contact/Products) -> light */
+.page-hero { background: linear-gradient(160deg,#EAF2FB,#DCEAF8); color: var(--ink); }
+.page-hero h1 { color: var(--ink); }
+.page-hero p { color: var(--steel); }
+.page-hero .eyebrow.on-dark { color: var(--accent); }
+.page-hero .crumb { color: var(--steel); }
+
+/* products page hero (uses .hero) -> light */
+.hero { background: linear-gradient(160deg,#EAF2FB,#DCEAF8); color: var(--ink); }
+.hero h1 { color: var(--ink); }
+.hero p { color: var(--steel); }
+.hero .crumb { color: var(--steel); }
+.hero-fade { background: linear-gradient(100deg, rgba(234,242,251,0.9) 30%, rgba(220,234,248,0.3) 100%); }
+
+/* CTA band -> blue gradient card */
+.cta-band { background: linear-gradient(135deg,#1F7FFD,#145FCB); color: #fff; }
+.cta-band h2 { color: #fff; }
+.cta-band p { color: #D6E6FB; }
+.cta-band .eyebrow.on-dark { color: #BFE0FF; }
+
+/* footer -> light */
+.footer { background: #0E1A38; color: #C9D6EA; }  /* keep footer dark navy for contrast */
+
+/* buttons: primary blue */
+.btn-primary { background: var(--accent); color: #fff; }
+.btn-primary:hover { background: var(--accent-700); }
+.btn-dark { background: var(--ink); color: #fff; }
+.btn-dark:hover { background: var(--slate); }
+
+/* flow icon chips -> blue */
+.flow-ic { background: var(--accent); color: #fff; }
+
+/* panels (network canvas holders) -> light frame */
+.panel { background: #E7F0FA; border: 1px solid var(--line); }
+
+/* value/info cards, generic surfaces stay light automatically since
+   the base already used white + --line borders. */
+
+/* fixed navbar clearance (nav is absolute/floating) already handled
+   by .page-hero-inner padding-top below. */
+
+/* tighten the gap between the hero and the first content section */
+.hp > .hp-section:first-of-type { padding-top: 32px; }

@@ -44,7 +44,7 @@ const industries = [
 
 const testimonials = [
   {
-    quote: 'OCTET catches outages before customers notice. Our uptime has never been better.',
+    quote: 'OCTENIX catches outages before customers notice. Our uptime has never been better.',
     name: 'Rajesh Mehta', role: 'VP of Operations', company: 'NetServ Global',
   },
   {
@@ -144,7 +144,7 @@ export default function Home() {
               </div>
 
               <div className="h-glass hp-ba-card hp-card-new fade-up">
-                <span className="hp-card-tag hp-tag-new">OCTET</span>
+                <span className="hp-card-tag hp-tag-new">OCTENIX</span>
                 <h3>Predictive & automated</h3>
                 <ul className="hp-card-list">
                   {['Failures caught before impact', 'AI narrows to root cause in seconds', 'Full multi-vendor coverage', 'Only what matters, nothing else'].map(t => (
@@ -281,7 +281,7 @@ export default function Home() {
             <span className="hp-kicker">Integrations</span>
             <h2 className="hp-title" style={{ maxWidth: '20ch' }}>Works with your entire stack.</h2>
             <p className="hp-body" style={{ marginTop: 14, maxWidth: '54ch' }}>
-              OCTET connects to the vendors and platforms you already run — via SNMP, open APIs, and native connectors.
+              OCTENIX connects to the vendors and platforms you already run — via SNMP, open APIs, and native connectors.
             </p>
           </div>
           <div className="hp-integ-grid fade-up">
