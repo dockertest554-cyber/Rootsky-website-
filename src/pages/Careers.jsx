@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import { Icon, useReveal } from '../components/ui.jsx'
+import { postForm, wakeApi } from '../api.js'
 
 const roles = [
   { title: 'Network Infrastructure Engineer', dept: 'Engineering', type: 'Full-time', loc: 'Remote' },
@@ -23,6 +24,8 @@ export default function Careers() {
   useReveal()
   const [form, setForm] = useState(empty)
   const [status, setStatus] = useState({ state: 'idle', msg: '' })
+
+  useEffect(wakeApi, [])
   const update = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
   const apply = (roleTitle) => {
@@ -34,13 +37,7 @@ export default function Careers() {
     e.preventDefault()
     setStatus({ state: 'loading', msg: '' })
     try {
-      const res = await fetch('/api/careers', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      })
-      const data = await res.json()
-      if (!res.ok) throw new Error(data.message || 'Something went wrong.')
+      await postForm('/api/careers', form)
       setStatus({ state: 'ok', msg: 'Application received. If it\'s a fit, we\'ll be in touch soon.' })
       setForm(empty)
     } catch (err) {

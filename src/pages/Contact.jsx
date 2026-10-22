@@ -1,6 +1,7 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import PageHero from '../components/PageHero.jsx'
 import { Icon, useReveal } from '../components/ui.jsx'
+import { postForm, wakeApi } from '../api.js'
 
 const empty = { name: '', email: '', company: '', message: '' }
 
@@ -9,19 +10,15 @@ export default function Contact() {
   const [form, setForm] = useState(empty)
   const [status, setStatus] = useState({ state: 'idle', msg: '' })
 
+  useEffect(wakeApi, [])
+
   const update = (e) => setForm({ ...form, [e.target.name]: e.target.value })
 
   const submit = async (e) => {
     e.preventDefault()
     setStatus({ state: 'loading', msg: '' })
     try {
-      const res = await fetch('/api/contact', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(form),
-      })
-      const data = await res.json()
-      if (!res.ok) throw new Error(data.message || 'Something went wrong.')
+      await postForm('/api/contact', form)
       setStatus({ state: 'ok', msg: 'Thanks — your message is in. We\'ll reply within one business day.' })
       setForm(empty)
     } catch (err) {
